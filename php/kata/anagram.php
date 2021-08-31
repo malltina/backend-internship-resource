@@ -14,7 +14,15 @@ function is_anagram(string $s1, string $s2): bool
 
 function is_anagram2(string $s1, $s2): bool
 {
-    // Home work: complete the function using count_chars bultin function
+    if (count_chars($s1, 1) == count_chars($s2, 1))
+    {
+        return "This two strings are anagram";
+    }
+    else
+    {
+        return "This two strings are not anagram";
+    }
+    
 }
 
 
