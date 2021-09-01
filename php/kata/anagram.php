@@ -17,6 +17,8 @@ function is_anagram2(string $s1, $s2): bool
     if (count_chars($s1, 1) == count_chars($s2, 1))
     {
         return true;
+		
+		
     }
     else
     {
