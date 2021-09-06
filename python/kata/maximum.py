@@ -1,5 +1,11 @@
 def max_aggregate(score_list):
-    """ Write a code to calculate the maximum aggregate from the list of tuples (pairs). """
+    counter = {}
+    for person in score_list:
+        if person[0] in counter:
+            counter[person[0]] += person[1]
+        else:
+            counter[person[0]] = person[1]
+    return (max(counter, key=counter.get), counter[max(counter, key=counter.get)])
 
 
 print(max_aggregate([
