@@ -17,7 +17,7 @@ function is_anagram(string $s1, string $s2): bool
 
 
 
-function is_anagram2(string $s1, $s2): bool
+function is_anagram2($s1, $s2): bool
 {
     // Home work: complete the function using count_chars bultin function
 
@@ -38,7 +38,7 @@ function is_anagram2(string $s1, $s2): bool
 
 // Addres Sample Solution => : https://www.w3resource.com/php-exercises/challenges/1/php-challenges-1-exercise-21.php
 
-function is_anagram3(string $s1, $s2): bool
+function is_anagram3($s1, $s2): bool
 {
     // Home work: complete the function using count_chars bultin function
 
