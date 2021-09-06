@@ -13,8 +13,10 @@ abstract class Animal{
 
 //lion
 class Lion extends Animal {
+	use GivenBirth;
+	use Hunt;
 	public function move(){
-		echo "move: --";
+		echo "move";
 	}
 	public function sound(){
 		echo "sound: roar roOoooar";
@@ -24,15 +26,13 @@ class Lion extends Animal {
 		$type = AnimalType::wild;
 		return $type;
 	}
-	
-	    use GivenBirth;
-		use Hunt;
 }
 
 // Sheep
 class Sheep extends Animal {
+	use GivenBirth;
 	public function move(){
-		echo "move: ";
+		echo "move";
 	}
 	public function sound(){
 		echo "sound: Baaa Baaaa";
@@ -42,8 +42,6 @@ class Sheep extends Animal {
 		$type = AnimalType::wild;
 		return $type;
 	}
-	
-	    use GivenBirth;
 }
 
 trait GivenBirth 
@@ -58,7 +56,7 @@ trait Hunt
 {
     public function Hunting()
     {
-        echo "Yes it is Hunt";
+        echo "Yes, it is Hunt";
     }
 }
 
