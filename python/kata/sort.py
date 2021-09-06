@@ -1,7 +1,9 @@
 def sort_by_last_element(numbers):
-    """ Write a code to get a list, sorted in increasing order by the last element
-    in each tuple from a given list of non-empty tuples."""
+    return sorted(numbers, key=lambda x: x[-1])
 
+number_of_tuples = int(input())
+list_of_tuples = [(tuple(map(int, input().split()))) for i in range(number_of_tuples)]
 
-print(sort_by_last_element([(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]))
+print(sort_by_last_element(list_of_tuples))
+# print(sort_by_last_element([(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]))
 # Expected Result : [(2, 1), (1, 2), (2, 3), (4, 4), (2, 5)]
