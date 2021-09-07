@@ -1,7 +1,6 @@
 <?php
 class Request
 {
-    public string $type;
     protected int  $getCounter = 0;
     protected int $postCounter = 0;
 
