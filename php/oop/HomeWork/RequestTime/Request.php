@@ -2,8 +2,8 @@
 class Request
 {
     public string $type;
-    public int  $getCounter = 0;
-    public int $postCounter = 0;
+    protected int  $getCounter = 0;
+    protected int $postCounter = 0;
 
     public function get($url) :void
     {
@@ -34,3 +34,4 @@ class Request
         }
     }
 }
+
