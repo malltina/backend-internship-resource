@@ -30,7 +30,7 @@ class Comment
 
     public function __construct(public string $contents, public User $user, public DateTimeImmutable $submitedAt)
     {
-        $this->id = mt_rand(10, 1000);
+        $this->id = mt_rand(10, 100);
     }
 
     public function getId(): int
@@ -49,11 +49,12 @@ class Post
     {
     }
 
-    public function addComment(int $id, Comment $comment): int
+    public function addComment(Comment $comment)
     {
 
         $this->comments[$comment->getId()] = $comment;
-        return $id;
+
+
     }
 
 
@@ -76,7 +77,7 @@ $date = new DateTimeImmutable('2026-09-13');
 $comment = new Comment('noooooooooo', $user, $date,);
 $post = new Post($user, 'nocontetn', 'notil');
 $post->addComment($comment);
-//$post->removeComment('2');
+$post->removeComment('2');
 
 
 var_dump($post);
