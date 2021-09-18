@@ -1,9 +1,11 @@
 def cube(numbers):
     """ Write a code to cube every number in a given list of integers using Map and Lambda. """
-
+    return map(lambda x:x**3,numbers)
 
 def square(numbers):
     """ Write a code to square every number in a given list of integers using Map and Lambda. """
+    return map(lambda x:x**2,numbers)
+
 
 
 

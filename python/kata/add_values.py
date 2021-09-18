@@ -1,5 +1,6 @@
 def add_values(list1, list2, list3):
-    """ Write a code to add three given lists using Python map and lambda. """
+    total = map(lambda x, y, z:x + y + z, list1, list2, list3)
+    return total
 
 
 nums1 = [1, 2, 3]
